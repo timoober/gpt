@@ -1,0 +1,25 @@
+# Site settings
+lang: de
+title: GPT GitHub Pages
+name: GPT GitHub Pages
+description: "Moderne Landing-Page, bereitgestellt mit Jekyll und GitHub Pages."
+url: ""
+baseurl: ""
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+
+collections:
+  posts:
+    output: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
