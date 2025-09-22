@@ -1,15 +1,28 @@
 # GPT GitHub Pages
 
-Diese Repository liefert eine statische Welcome-Seite für GitHub Pages.
+Dieses Repository stellt eine Jekyll-basierte Landing-Page für GitHub Pages bereit.
 
-## Vorschau
+## Voraussetzungen
 
-Öffne `index.html`, um die Willkommensseite lokal zu betrachten, oder aktiviere GitHub Pages für den `main`-Branch.
+- Ruby >= 3.0
+- [Bundler](https://bundler.io/) (`gem install bundler`)
+
+## Lokale Vorschau
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Anschließend erreichst du die Seite unter <http://localhost:4000>.
 
 ## Anpassen
 
-- Bearbeite Texte direkt in `index.html`.
-- Füge Abschnitte, Bilder oder zusätzliche Seiten hinzu.
-- Nutze eigene Styles oder JavaScript, um die Seite zu erweitern.
+- Passe Seitentitel und Beschreibung in [`_config.yml`](./_config.yml) an.
+- Bearbeite das Layout unter [`_layouts/default.html`](./_layouts/default.html).
+- Aktualisiere Inhalte in [`index.html`](./index.html) und ergänze eigene Seiten im Wurzelverzeichnis.
+- Style-Anpassungen nimmst du in [`assets/css/main.css`](./assets/css/main.css) vor.
 
-Viel Spaß beim Erstellen deiner persönlichen Landing-Page!
+## Deployment
+
+Aktiviere GitHub Pages für den `main`-Branch (Ordner `/`) – GitHub baut die Seite automatisch mit Jekyll.
